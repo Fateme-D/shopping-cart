@@ -2,11 +2,17 @@
     width: 100%;
     height: 4.5rem;
     background-color: #ede9fe;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .mainNavigation nav {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    max-width: 1170px; ;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
 } 
@@ -19,10 +25,14 @@
 
 .mainNavigation li {
     margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .mainNavigation a {
-    display: block;
+    display: inline-block;
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
@@ -30,6 +40,27 @@
 
 .mainNavigation a:hover,
 .activeLink  {
-    color: #6d28d9;
-    background-color: #fff;
+    color: #fff;
+    background-color: #8f59e5;
 }
+
+
+.cartLink {
+    position: relative;
+}
+
+.mainNavigation span {
+    position: absolute;
+    right: -9px;
+    top: -9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #6d28d9;
+    color: #fff;
+    font-size: 15px;
+}
+
